@@ -9,8 +9,8 @@ const CoinSearch = ({coins}) => {
   return (
     <div className="coins-container">
       <div className="coins-wrapper">
-        <h2>Search Crypto</h2>
-        <h3>Crypto Dashboard</h3>
+        <h2 className="coins-header">Search Crypto</h2>
+        <h3 className="coins-subheader">Crypto Dashboard</h3>
         <form>
         <input onChange={(e) => setSearchText(e.target.value)} type="text" placeholder='Search a coin'/>
         </form>
