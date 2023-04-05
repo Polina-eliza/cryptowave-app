@@ -1,0 +1,33 @@
+.calltoaction {
+    margin-top: 204px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-trending {
+    background: linear-gradient(276.71deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
+    transform: translateY(-30px);
+}
+
+.descr span {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 129.7%;
+  font-family: var(--font-heading);
+  color: var(--color-body-primary);
+}
+
+@media (max-width: 991px) {
+    .calltoaction {
+        margin-top: 204px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .btn-trending {
+        margin-top: 80px;
+    }
+}
