@@ -19,7 +19,7 @@ hr {
 }
 
 h1 {
-    width: 1000px;
+    max-width: 1000px;
     text-align: center;
     margin-top: 28px;
 }
@@ -32,7 +32,7 @@ h1 span {
 }
 
 p {
-    width: 837px;
+    max-width: 837px;
     text-align: center;
     color: var(--color-body-secondary);
     margin-top: 28px;

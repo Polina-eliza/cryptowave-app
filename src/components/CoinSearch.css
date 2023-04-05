@@ -2,5 +2,68 @@
     border-radius: 10px;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: 244px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+h3 {
     margin-top: 20px;
+}
+
+.coins-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4px 6px;
+    text-align: center;
+}
+
+input {
+    width: 15%;
+    padding: 8px 16px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    border: none;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+
+table {
+    
+    width: 95%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 50px 30px;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    width: 90%;
+}
+
+.coin {
+    text-align: left;
+}
+
+@media (max-width: 991px) {
+    
+    .coins-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    input {
+        width: 100%;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .volume, .mkt {
+        display: none;
+    }
 }
