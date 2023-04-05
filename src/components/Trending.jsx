@@ -20,23 +20,22 @@ const Trending = () => {
         <h2 className='trending-subtitle'>Trending Coins</h2>
         <div className='coins-grid'>
             {trending.map((coin) => (
-                <div className='coin-container'>
-                    <div>
-                    <div>
-                        <img src={coin.item.small} alt="/" />
-                        <div>
+                <div className='coin-wrapper'>
+                    <div className='individual-wrapper'>
+                    <div className='left-wrapper'>
+                        <img className='coin-img' src={coin.item.small} alt="/" />
+                        <div className='coin-name'>
                             <p>{coin.item.name}</p>
                             <p>{coin.item.symbol}</p>
                         </div>
                     </div>
                     </div>
-                    <img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="/" />
-                    <p>{coin.item.price_btc.toFixed(7)}</p>
+                    <img className='btc-img' src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="/" />
+                    <p className='btc-price'>{coin.item.price_btc.toFixed(7)}</p>
                 </div>
 
             ))}
         </div>
-
     </div>
   )
 }

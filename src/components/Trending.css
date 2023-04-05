@@ -1,15 +1,86 @@
-.trending-container {
+
+   .trending-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     background-color: #f0f0f0;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 244px;
-    padding-bottom: 40px;
-}
-
-h2 {
+    margin-top: 204px;
+    padding: 40px;
+  } 
+  
+  .trending-subtitle {
     text-align: center;
-    padding-top: 40px;
-}
+  }
+  
+  .coins-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 50px;
+  }
+  
+  .coin-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+   
+  .individual-wrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+  
+  .left-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  .coin-img {
+    width: 50px;
+    margin-right: 20px;
+  }
+  
+  .coin-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .btc-img {
+    width: 20px;
+    margin-right: 20px;
+  }
+  
+  
+  @media (max-width: 1100px) {
+    .coins-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+        margin-top: 50px;
+      }
+  }
 
-
-
+  @media (max-width: 768px) {
+    .coins-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+        margin-top: 50px;
+      }
+  }
