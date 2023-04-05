@@ -54,3 +54,47 @@
     display: block;
     margin: 0 auto;
   }
+
+
+
+
+  @media (max-width: 1270px) {
+    .data {
+      font-size: 40px;
+  }
+
+  .img {
+    width: 110px;
+    background: #212326;
+    border-radius: 31px;
+  }
+
+  .right-container {
+    padding: 13px;
+  }
+
+  .stars {
+    width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    gap: 15px;
+}
+
+.text {
+  max-width: 170px;
+}
+
+  }
+
+  @media (max-width: 991px) {
+    .benefits {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 80px;
+  }
+
+  }
