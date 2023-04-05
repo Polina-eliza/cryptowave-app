@@ -1,12 +1,13 @@
 import CoinItem from "./CoinItem";
 import React, { useState } from 'react';
+import './CoinSearch.css';
 
 const CoinSearch = ({coins}) => {
   const [searchText, setSearchText] = useState('');
 
 
   return (
-    <div>
+    <div className="coins-container">
       <div>
         <h1>Search Crypto</h1>
         <form>

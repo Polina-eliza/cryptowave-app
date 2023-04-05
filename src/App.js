@@ -10,6 +10,7 @@ import About from './routes/About';
 import Pricing from './routes/Pricing';
 import Contact from './routes/Contact';
 import axios from "axios";
+import Hero from "./components/Hero";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <div>
       <div className="app-container">
      <Navbar />
+     <Hero />
      <Routes>
       <Route path='/' element={<Home coins={coins}/>} />
       <Route path='/signin' element={<Signin />} />

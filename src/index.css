@@ -49,8 +49,9 @@ img {
 
 h1 {
 font-weight: 700;
-font-size: 80px;
+font-size: 70px;
 line-height: 129.7%;
+font-family: var(--font-heading);
 }
 
 h2 {
