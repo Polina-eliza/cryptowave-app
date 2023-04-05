@@ -1,0 +1,56 @@
+.benefits {
+    margin-top: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 31px;
+    margin-top: 25px;
+}
+
+.data {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 129.7%;
+}
+
+.wrapper:nth-child(1) span {
+    color: #FFB355;
+  }
+  
+  .wrapper:nth-child(2) span {
+    color: #27CAEA;
+  }
+  
+  .descr {
+    color: var(--color-body-secondary);
+  }
+
+  .right-container {
+    background: #212326;
+    border-radius: 31px;
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+  }
+
+  .img {
+    width: 130px;
+    background: #212326;
+    border-radius: 31px;
+  }
+
+  .text {
+    max-width: 235px;
+  }
+
+  .stars {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
