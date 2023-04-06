@@ -24,7 +24,7 @@ const Trending = () => {
                     <div className='individual-wrapper'>
                     <div className='left-wrapper'>
                         <img className='coin-img' src={coin.item.small} alt="/" />
-                        <div className='coin-name'>
+                        <div className='coins-name'>
                             <p>{coin.item.name}</p>
                             <p>{coin.item.symbol}</p>
                         </div>

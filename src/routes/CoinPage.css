@@ -5,6 +5,7 @@
 .coin-container-top {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
     gap: 50px;
 }
 
@@ -73,4 +74,26 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.data-header {
+    font-weight: 700;
+}
+
+
+
+
+@media (max-width: 991px) {
+    .coin-container-top {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .data-header {
+        margin-top: 40px;
+    }
+    
+
 }

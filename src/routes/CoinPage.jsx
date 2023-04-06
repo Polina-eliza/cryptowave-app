@@ -77,7 +77,7 @@ const CoinPage = () => {
       </div>
 
       <div className='coin-container-left'>
-          <p className='data-heading'>Market Stats</p>
+          <p className='data-header'>Market Stats</p>
           <div className='data-wrapper'>
             <div>
               <p className='data-heading'>Market Rank</p>

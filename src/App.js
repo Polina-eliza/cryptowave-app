@@ -10,9 +10,8 @@ import About from './routes/About';
 import Pricing from './routes/Pricing';
 import Contact from './routes/Contact';
 import CoinPage from './routes/CoinPage';
-
-
 import axios from "axios";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -42,6 +41,7 @@ function App() {
       <Route path='/coin/:coinId' element={<CoinPage />} />
       <Route path=':coinId' />
      </Routes>
+     <Footer />
     </div>
     </div>
   );

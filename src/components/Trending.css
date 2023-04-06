@@ -59,7 +59,7 @@
     margin-right: 20px;
   }
   
-  .coin-name {
+ .coins-name {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

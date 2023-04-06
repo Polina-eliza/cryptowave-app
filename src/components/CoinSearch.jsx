@@ -11,12 +11,13 @@ const CoinSearch = ({coins}) => {
       <div className="coins-wrapper">
         <h2 className="coins-header">Search Crypto</h2>
         <h3 className="coins-subheader">Crypto Dashboard</h3>
+        <p className="coins-descr">Click on the coin's name to view all relevant information and stats. </p>
         <form>
-        <input onChange={(e) => setSearchText(e.target.value)} type="text" placeholder='Search a coin'/>
+        <input className="input" onChange={(e) => setSearchText(e.target.value)} type="text" placeholder='Search a coin'/>
         </form>
       </div>
 
-      <table>
+      <table className="table">
         <thead>
           <tr>
             <th></th>
