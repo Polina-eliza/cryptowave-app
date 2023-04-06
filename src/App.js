@@ -9,6 +9,9 @@ import Account from './routes/Account';
 import About from './routes/About';
 import Pricing from './routes/Pricing';
 import Contact from './routes/Contact';
+import CoinPage from './routes/CoinPage';
+
+
 import axios from "axios";
 
 
@@ -36,6 +39,8 @@ function App() {
       <Route path='/about' element={<About />} />
       <Route path='/pricing' element={<Pricing />} />
       <Route path='/contact' element={<Contact />} />
+      <Route path='/coin/:coinId' element={<CoinPage />} />
+      <Route path=':coinId' />
      </Routes>
     </div>
     </div>

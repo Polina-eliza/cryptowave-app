@@ -1,0 +1,76 @@
+.coinpage {
+    margin-top: 120px;
+}
+
+.coin-container-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.coin-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.coin-container-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coin-title-container {
+    display: flex;
+    align-items: center;
+    margin-top: 
+}
+
+.coin-name {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.seven-days-wrapper {
+    margin-top: 20px;
+}
+
+.current-price {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.data-wrapper {
+    margin-top: 20px;
+}
+
+.data-heading {
+    color: var(--color-body-secondary);
+    font-size: 15px;
+}
+
+.coin-about-title {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.coin-about-text {
+    margin-top: 20px;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

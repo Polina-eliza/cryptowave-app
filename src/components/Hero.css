@@ -31,7 +31,7 @@ h1 span {
     background-clip: text;
 }
 
-p {
+.hero-descr {
     max-width: 837px;
     text-align: center;
     color: var(--color-body-secondary);

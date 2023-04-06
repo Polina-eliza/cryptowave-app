@@ -19,8 +19,8 @@ const Trending = () => {
     <div className='trending-container'>
         <h2 className='trending-subtitle'>Trending Coins</h2>
         <div className='coins-grid'>
-            {trending.map((coin) => (
-                <div className='coin-wrapper'>
+            {trending.map((coin, idx) => (
+                <div key={idx} className='coin-wrapper'>
                     <div className='individual-wrapper'>
                     <div className='left-wrapper'>
                         <img className='coin-img' src={coin.item.small} alt="/" />
