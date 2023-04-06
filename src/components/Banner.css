@@ -1,0 +1,19 @@
+.banner {
+   margin-top: 150px;
+   background-image: url(../assets/Background-image.png);
+   min-height: 708px;
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.banner-heading {
+    max-width: 700px;
+    text-align: center;
+    padding-top: 230px;
+  }
+
+.btn-banner {
+    margin-top: 90px;
+}

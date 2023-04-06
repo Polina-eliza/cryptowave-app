@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Trending from '../components/Trending';
 import Portfolio from '../components/Portfolio';
 import CallToAction from '../components/CallToAction';
+import Banner from '../components/Banner';
 
 const Home = ({coins}) => {
   return (
@@ -15,6 +16,7 @@ const Home = ({coins}) => {
         <Portfolio />
         <CallToAction />
         <Trending />
+        <Banner />
     </div>
   )
 }
