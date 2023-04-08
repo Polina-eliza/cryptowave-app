@@ -1,0 +1,45 @@
+.saved-coin-container {
+    margin-top: 32px;
+    font-size: 16px;
+  }
+  
+  .saved-coin-container p {
+    margin-bottom: 16px;
+  }
+  
+  .saved-coin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .saved-coin-table th,
+  .saved-coin-table td {
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .saved-coin-table th {
+    font-weight: 700;
+    text-align: left;
+  }
+  
+  .saved-coin-table td {
+    text-align: center;
+  }
+  
+  .saved-coin-table td:last-child {
+    padding-left: 32px;
+  }
+  
+  .coin-img {
+    width: 24px;
+    margin-right: 8px;
+  }
+  
+  .coin-name {
+    font-weight: 700;
+  }
+  
+  .coin-symbol {
+    color: #a1a1aa;
+  }
