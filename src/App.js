@@ -12,6 +12,7 @@ import Contact from './routes/Contact';
 import CoinPage from './routes/CoinPage';
 import axios from "axios";
 import Footer from "./components/Footer";
+import { AuthContextProvider } from './context/AuthContext';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
 
 
   return (
-    <div>
+      <AuthContextProvider>
+        <div>
       <div className="app-container">
      <Navbar />
      <Routes>
@@ -44,6 +46,8 @@ function App() {
      <Footer />
     </div>
     </div>
+      </AuthContextProvider>
+     
   );
 }
 

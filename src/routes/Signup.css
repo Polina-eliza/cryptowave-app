@@ -67,5 +67,12 @@
   .signin-link {
     text-decoration: underline;
   }
+
+  .error-message {
+    background-color: red;
+    padding: 14px;
+    margin-top: 10px;
+
+  }
   
  

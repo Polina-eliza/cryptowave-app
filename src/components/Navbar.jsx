@@ -1,14 +1,26 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../assets/logotype.svg';
 import '../components/Navbar.css';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { UserAuth } from '../context/AuthContext';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const { user, logout } = UserAuth();
+  const navigate = useNavigate();
 
   const handleNav = () => {
     setNav(!nav);
+  };
+
+  const handleSignOut = async () => {
+    try {
+      await logout();
+      navigate('/');
+    } catch (e) {
+      console.log(e.message);
+    }
   };
 
 
@@ -26,14 +38,26 @@ const Navbar = () => {
           <Link className='navbar-page' to='/pricing'>Pricing</Link>
           <Link className='navbar-page' to='/contact'>Contact</Link>
         </div>
+
+        {user?.email ? (
+           <div className='auth-container'>
+            <Link className='account' to='/account'>Account</Link>
+        
+          <Link className='signup' to='/signup'>Sign Out</Link>
+           </div>
+        ) : (
         <div className='auth-container'>
           <Link className='signin' to='/signin'>Sign In</Link>
           <Link className='signup' to='/signup'>Sign Up</Link>
         </div>
+        )}
+
+
         <div onClick={handleNav} className='menu-icon'>
           {nav ? <AiOutlineClose size={32} color="black"/> : <AiOutlineMenu size={32} color="black" />}
         </div>
-       
+      
+
         {/* Mobile Menu */}
         <div className={nav ? 'mobile active' : 'mobile'}>
           <ul>
