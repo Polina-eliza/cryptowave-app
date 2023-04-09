@@ -39,22 +39,21 @@ const SavedCoin = () => {
       ) : (
         <table className='saved-coin-table'>
           <thead>
-            <tr>
-              <th className='rank'>Rank #</th>
-              <th className='coin'>Coin</th>
-              <th className='remove'>Remove</th>
+            <tr className='saved-list'>
+              <th className='saved-item'>Rank #</th>
+              <th className='saved-item'>Coin</th>
+              <th className='saved-item'>Remove</th>
             </tr>
           </thead>
           <tbody>
             {coins?.map((coin) => (
               <tr key={coin.id}>
-                <td>{coin?.rank}</td>
+                <td className=''>{coin?.rank}</td>
                 <td>
                   <Link to={`/coin/${coin.id}`}>
                     <div>
                       <img className='coin-img' src={coin?.image}  alt='/' />
                       <div>
-                        <p className='coin-name'>{coin?.name}</p>
                         <p className='coin-symbol'>
                           {coin?.symbol.toUpperCase()}
                         </p>

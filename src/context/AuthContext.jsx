@@ -14,14 +14,26 @@ const UserContext = createContext();
 export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState({});
 
+
   const signUp = (email, password) => {
-    createUserWithEmailAndPassword(auth, email, password);
-    return setDoc(doc(db, 'users', email), {
-      watchList: [],
-    });
+    return createUserWithEmailAndPassword(auth, email, password)
+      .then(() => {
+        return setDoc(doc(db, 'users', email), {
+          watchList: [],
+        });
+      });
   };
+ 
   const signIn = (email, password) => {
-    return signInWithEmailAndPassword(auth, email, password);
+    return signInWithEmailAndPassword(auth, email, password)
+    .then(() => {
+
+    })
+    .catch((error) => {
+      throw error;
+    });
+
+    
   };
 
   const logout = () => {

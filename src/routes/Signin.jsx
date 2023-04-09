@@ -18,9 +18,9 @@ const Signin = () => {
     try {
       await signIn(email, password);
       navigate('/account');
-    } catch (e) {
-      setError(e.message);
-      console.log(e.message);
+    } catch (error) {
+      console.error(error);
+      setError(error.message);
     }
   };
 
@@ -53,6 +53,7 @@ const Signin = () => {
           <button className='btn btn-trending'>
             Sign in
           </button>
+          {error && <p className="error-message">{error}</p>}
         </form>
         <p className='create-account'>
           Don't have an account?{' '}

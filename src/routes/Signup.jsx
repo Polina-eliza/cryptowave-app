@@ -26,6 +26,7 @@ const Signup = () => {
   };
 
 
+
   return (
     <div>
       <div className='signup-container'>

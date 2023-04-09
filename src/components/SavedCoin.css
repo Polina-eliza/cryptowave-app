@@ -9,18 +9,12 @@
   
   .saved-coin-table {
     width: 100%;
-    border-collapse: collapse;
   }
   
-  .saved-coin-table th,
-  .saved-coin-table td {
+  .saved-item,
+  .saved-rank {
     padding: 16px;
     border-bottom: 1px solid #e5e7eb;
-  }
-  
-  .saved-coin-table th {
-    font-weight: 700;
-    text-align: left;
   }
   
   .saved-coin-table td {
@@ -42,4 +36,10 @@
   
   .coin-symbol {
     color: #a1a1aa;
+  }
+
+  @media only screen and (max-width: 991px) {
+    .coin-name {
+      display: none;
+    }
   }
