@@ -2,9 +2,31 @@ import React, { useEffect, useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import '../components/SavedCoin.css';
+import { doc, onSnapshot, updateDoc } from 'firebase/firestore';
+import { db } from '../firebase';
+import { UserAuth } from '../context/AuthContext';
 
 const SavedCoin = () => {
   const [coins, setCoins] = useState([]);
+  const { user } = UserAuth();
+
+  useEffect(() => {
+    onSnapshot(doc(db, 'users', `${user?.email}`), (doc) => {
+      setCoins(doc.data()?.watchList);
+    });
+  }, [user?.email]);
+
+  const coinPath = doc(db, 'users', `${user?.email}`);
+  const deleteCoin = async (passedid) => {
+    try {
+      const result = coins.filter((item) => item.id !== passedid);
+      await updateDoc(coinPath, {
+        watchList: result,
+      });
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
   
 
   return (
@@ -42,6 +64,7 @@ const SavedCoin = () => {
                 </td>
                 <td>
                   <AiOutlineClose
+                  onClick={() => deleteCoin(coin.id)}
                   />
                 </td>
               </tr>

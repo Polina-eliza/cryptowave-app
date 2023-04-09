@@ -23,7 +23,6 @@ const Navbar = () => {
     }
   };
 
-
   return (
     <div className='navbar'>
         <Link to='/'>
@@ -42,8 +41,7 @@ const Navbar = () => {
         {user?.email ? (
            <div className='auth-container'>
             <Link className='account' to='/account'>Account</Link>
-        
-          <Link className='signup' to='/signup'>Sign Out</Link>
+          <Link onClick={handleSignOut} className='signup' to='/signup'>Sign Out</Link>
            </div>
         ) : (
         <div className='auth-container'>
@@ -61,28 +59,28 @@ const Navbar = () => {
         {/* Mobile Menu */}
         <div className={nav ? 'mobile active' : 'mobile'}>
           <ul>
-            <li>
+            <li onClick={handleNav}>
               <Link className='home' to='/'>Home</Link>
             </li>
-            <li>
+            <li onClick={handleNav}>
             <Link className='navbar-page' to='/about'>About</Link>
             </li>
-            <li>
+            <li onClick={handleNav}>
             <Link className='navbar-page' to='/pricing'>Pricing</Link>
             </li>
-            <li>
+            <li onClick={handleNav}>
             <Link className='navbar-page' to='/contact'>Contact</Link>
             </li>
-            <li>
+            <li onClick={handleNav}>
               <Link className='account'to='/'>Account</Link>
             </li>
           </ul>
           <div className='btn-container'>
             <Link to='/signin'>
-              <button className="btn btn-signin" >Sign In</button>
+              <button onClick={handleNav} className="btn btn-signin" >Sign In</button>
             </Link>
             <Link to='/signup'>
-              <button className='btn btn-signup'>Sign Up</button>
+              <button onClick={handleNav} className='btn btn-signup'>Sign Up</button>
             </Link>
           </div>
         </div>
