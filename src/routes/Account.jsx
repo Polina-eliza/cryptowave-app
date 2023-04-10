@@ -20,8 +20,8 @@ const Account = () => {
 
   if (user) {
   return (
-    <div className='account'>
-      <div className='account-container'>
+    <div className='account-container'>
+      <div className='account-wrapper'>
           <div className='welcome-container'>
             <h2 className='header header-account'>Account</h2>
             <div>
@@ -35,6 +35,7 @@ const Account = () => {
             </button>
           </div>
         </div>
+        
         <div className='watch-list-container'>
           <div className='watch-list-wrapper'>
             <h2>Watch List</h2>

@@ -1,9 +1,9 @@
-.account {
+.account-container {
     max-width: 1140px;
     margin: 0 auto;
   }
   
-  .account-container {
+  .account-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +46,9 @@
   }
 
   @media (max-width: 991px) {
-    .account-container {
+    .account-wrapper {
       flex-direction: column;
+      align-items: flex-start;
+
     }
   }

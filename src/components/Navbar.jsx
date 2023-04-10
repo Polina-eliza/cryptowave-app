@@ -33,8 +33,6 @@ const Navbar = () => {
         </Link>
         <div className='pages-container'>
           <Link className='navbar-page' to='/'>Home</Link>
-          <Link className='navbar-page' to='/about'>About</Link>
-          <Link className='navbar-page' to='/pricing'>Pricing</Link>
           <Link className='navbar-page' to='/contact'>Contact</Link>
         </div>
 
@@ -61,12 +59,6 @@ const Navbar = () => {
           <ul>
             <li onClick={handleNav}>
               <Link className='home' to='/'>Home</Link>
-            </li>
-            <li onClick={handleNav}>
-            <Link className='navbar-page' to='/about'>About</Link>
-            </li>
-            <li onClick={handleNav}>
-            <Link className='navbar-page' to='/pricing'>Pricing</Link>
             </li>
             <li onClick={handleNav}>
             <Link className='navbar-page' to='/contact'>Contact</Link>
