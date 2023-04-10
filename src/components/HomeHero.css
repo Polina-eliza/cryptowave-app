@@ -2,7 +2,7 @@ hr {
     margin-top: 50px;
 }
 
-.hero {
+.hero-home {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -18,39 +18,31 @@ hr {
     margin-top: 122px;
 }
 
-h1 {
+
+.hero-home-header {
     max-width: 1000px;
     text-align: center;
     margin-top: 28px;
 }
 
-h1 span {
+.hero-home-header span {
     background: linear-gradient(276.71deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.hero-descr {
+.hero-home-descr {
     max-width: 837px;
     text-align: center;
     color: var(--color-body-secondary);
     margin-top: 28px;
 }
 
-.btn {
-    border-radius: 89px;
-    padding: 15px 48px;
-    border: none;
-    font-family: var(--font-heading);
-    font-size: 16px;
+.hero-home .signup-link { 
     margin-top: 40px;
-    background-color: #dfdfdf;
 }
 
-.btn:hover {
-    color: white;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
+
 
 

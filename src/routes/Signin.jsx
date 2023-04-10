@@ -50,20 +50,20 @@ const Signin = () => {
               <AiFillLock />
             </div>
           </div>
-          <button className='btn btn-trending'>
+          <button className='btn btn-signin'>
             Sign in
           </button>
           {error && <p className="error-message">{error}</p>}
         </form>
         <p className='create-account'>
           Don't have an account?{' '}
-          <Link className='signup-link' to='/signup'>
-            Sign up
+          <Link className="link-plain" to="/signup">
+            Sign Up
           </Link>
         </p>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Signin

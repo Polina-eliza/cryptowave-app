@@ -61,7 +61,7 @@ const Signup = () => {
         </form>
         <p className='create-account'>
           Don't have an account?{' '}
-          <Link className='signin-link' to='/signin'>
+          <Link className='link-plain' to='/signin'>
             Sign in
           </Link>
         </p>

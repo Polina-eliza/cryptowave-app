@@ -1,16 +1,11 @@
-.calltoaction {
+.call-to-action {
     margin-top: 204px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.btn-trending {
-    background: linear-gradient(276.71deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
-    transform: translateY(-30px);
-}
-
-.descr span {
+.call-to-action-descr span {
   font-weight: 700;
   font-size: 25px;
   line-height: 129.7%;
@@ -18,8 +13,10 @@
   color: var(--color-body-primary);
 }
 
+
+
 @media (max-width: 991px) {
-    .calltoaction {
+    .call-to-action {
         margin-top: 204px;
         display: flex;
         flex-direction: column;
@@ -27,7 +24,7 @@
         justify-content: space-between;
     }
     
-    .btn-trending {
+    .call-to-action .signup-link {
         margin-top: 80px;
     }
 }

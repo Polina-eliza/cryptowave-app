@@ -64,10 +64,25 @@
     font-size: 16px;
   }
 
-  .signup-link {
+  .link-plain {
     text-decoration: underline;
   }
+
+  .btn {
+    background: linear-gradient(276.71deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
+    border-radius: 89px;
+    padding: 10px 30px;
+    border: none;
+    font-family: var(--font-heading);
+    font-size: 18px;
+    margin: 30px;
+  }
   
+  .btn:hover {
+    background-color: var(--color-primary-dark);
+    color: white;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
  
 
   

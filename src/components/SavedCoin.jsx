@@ -72,7 +72,7 @@ const SavedCoin = () => {
         </table>
       )}
     </div>
-  )
-}
+  );
+};
 
 export default SavedCoin

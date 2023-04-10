@@ -22,7 +22,7 @@ const Trending = () => {
             {trending.map((coin, idx) => (
                 <div key={idx} className='coin-wrapper'>
                     <div className='individual-wrapper'>
-                    <div className='left-wrapper'>
+                    <div className='coin-names-wrapper'>
                         <img className='coin-img' src={coin.item.small} alt="/" />
                         <div className='coins-name'>
                             <p>{coin.item.name}</p>
@@ -37,7 +37,7 @@ const Trending = () => {
             ))}
         </div>
     </div>
-  )
-}
+  );
+};
 
 export default Trending

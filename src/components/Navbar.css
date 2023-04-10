@@ -39,20 +39,20 @@
     transition: all 0.3s ease-in-out;
 }
 
-.signin {
+.signin-link {
     background: radial-gradient(328px at 2.9% 15%, rgb(191, 224, 251) 0%, rgb(232, 233, 251) 25.8%, rgb(252, 239, 250) 50.8%, rgb(234, 251, 251) 77.6%, rgb(240, 251, 244) 100.7%);
     border-radius: 89px;
     padding: 10px 30px;
 }
 
 
-.signup {
+.signup-link {
     background: linear-gradient(276.71deg, #25F6FF -15.41%, #7782FF 52.42%, #FF5196 107.79%);
     border-radius: 89px;
     padding: 10px 30px;
 }
 
-.signup:hover, .signin:hover {
+.signup-link:hover, .signin-link:hover {
     background-color: var(--color-primary-dark);
     color: white;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;

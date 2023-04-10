@@ -39,14 +39,14 @@
 
   }
 
-   
   .individual-wrapper {
     display: flex;
     align-items: center;
     width: 50%;
+    height: 100px;
   }
   
-  .left-wrapper {
+  .coin-names-wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-start;

@@ -6,12 +6,12 @@
     justify-content: space-between;
 }
 
-.portfolio-subheading {
+.portfolio-header {
     max-width: 600px;
     text-align: center;
 }
 
-.portfolio-subheading span {
+.portfolio-header span {
     background: linear-gradient(98.24deg, #31E5FF 57.12%, #448FFF 79.01%, #FF82BE 101.36%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -21,31 +21,30 @@
 .cards-container {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
-    gap: 49px;
+    width: 100%;
+    gap: 15px;
 }
 
 .card {
     background-color: #dfdfdf;
     border-radius: 20px;
-    min-width: 320px;
-    max-width: 400px;
-
-    min-height: 634px;
+    max-width: 380px;
+    min-width: 280px;
+    min-height: 534px;
     padding: 49px 29px;
 }
 
 .card img {
-    width: 300px;
+    width: 250px;
 }
 
 .card-center .heading {
     margin-top: 52px;
 }
 
-.subheading {
+.portfolio-subheading {
     margin-top: 20px;
     color: var(--color-body-secondary);
 }
@@ -59,6 +58,8 @@
     .cards-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
     }
 
 }
