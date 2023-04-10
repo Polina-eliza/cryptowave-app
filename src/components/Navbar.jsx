@@ -23,7 +23,7 @@ const Navbar = () => {
       console.log(e.message);
     }
   };
-
+  
   return (
     <div className="navbar">
       <Link to="/">
