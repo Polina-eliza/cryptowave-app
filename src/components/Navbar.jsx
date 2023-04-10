@@ -9,6 +9,7 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const { user, logout } = UserAuth();
   const navigate = useNavigate();
+  const [activeLink, setActiveLink] = useState("/");
 
   const handleNav = () => {
     setNav(!nav);
@@ -32,10 +33,10 @@ const Navbar = () => {
         </div>
       </Link>
       <div className="pages-container">
-        <Link className="navbar-page" to="/">
+        <Link className={activeLink === "/" ? "navbar-page active" : "navbar-page"} to="/" onClick={() => setActiveLink("/")} >
           Home
         </Link>
-        <Link className="navbar-page" to="/contact">
+        <Link className={activeLink === "/contact" ? "navbar-page active" : "navbar-page"} to="/contact" onClick={() => setActiveLink("/contact")}>
           Contact
         </Link>
       </div>
@@ -70,7 +71,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div className={nav ? "mobile active" : "mobile"}>
-        <ul>
+        <ul className="navigation-container">
           <li onClick={handleNav}>
             <Link className="home" to="/">
               Home
@@ -87,14 +88,15 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
+
         <div className="btn-container">
           <Link to="/signin">
-            <button onClick={handleNav} className="btn btn-signin">
+            <button onClick={handleNav} className="signin-link btn-link">
               Sign In
             </button>
           </Link>
           <Link to="/signup">
-            <button onClick={handleNav} className="btn btn-signup">
+            <button onClick={handleNav} className="signup-link btn-link">
               Sign Up
             </button>
           </Link>
