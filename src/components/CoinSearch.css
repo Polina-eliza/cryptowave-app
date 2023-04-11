@@ -72,4 +72,12 @@ tr {
     .volume, .mkt {
         display: none;
     }
+
+    .table {
+    
+        width: 92%;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 50px 15px;
+    }
 }

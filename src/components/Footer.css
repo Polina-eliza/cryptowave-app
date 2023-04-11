@@ -63,10 +63,10 @@
   }
 
   .footer .signup-link{
-    padding: 12px 19px;
-    font-size: 11px;
+    padding: 10px 25px;
+    font-size: 12px;
     position: absolute;
-    transform: translate(-100px, 22px);
+    transform: translate(-97px, 23px);
   }
 
   .support-wrapper, .info-wrapper {
@@ -89,10 +89,10 @@
       }
 
       .footer .signup-link{
-        padding: 11px 19px;
+        padding: 11px 25px;
         font-size: 12px;
         position: absolute;
-        transform: translate(-83px, 42px);
+        transform: translate(-77px, 42px);
       }
 
 

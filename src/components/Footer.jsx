@@ -53,7 +53,7 @@ const Footer = () => {
                 name="email"
               />
               <button type="submit" className="signup-link">
-                Sign Up
+                Start
               </button>
             </form>
             <div className="footer-social">
