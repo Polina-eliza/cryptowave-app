@@ -7,7 +7,7 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Logo from "../assets/logotype.svg";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
