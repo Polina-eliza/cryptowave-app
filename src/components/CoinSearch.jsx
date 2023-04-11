@@ -5,6 +5,9 @@ import './CoinSearch.css';
 const CoinSearch = ({coins}) => {
   const [searchText, setSearchText] = useState('');
 
+  const filteredCoins = coins.filter((coin) =>
+    searchText === '' ? true : coin.name.toLowerCase().includes(searchText.toLowerCase())
+  );
 
   return (
     <div className="coins-container">
@@ -32,16 +35,7 @@ const CoinSearch = ({coins}) => {
           </tr>
         </thead>
         <tbody>
-        {coins
-            .filter((value) => {
-              if (searchText === '') {
-                return value;
-              } else if (
-                value.name.toLowerCase().includes(searchText.toLowerCase())
-              ) {
-                return value;
-              }
-            }).map((coin) => (
+        {filteredCoins.map((coin) => (
             <CoinItem key={coin.id} coin={coin} />
           ))}
 
