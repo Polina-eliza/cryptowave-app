@@ -11,8 +11,9 @@
 
   }
   
-  .footer-support, .footer-info, .footer-signup, .footer-powered {
+  .footer-support, .footer-info, .footer-signup {
     padding: 16px;
+    cursor: pointer;
   }
   
   .footer-signup {
@@ -62,7 +63,7 @@
   }
 
   .footer .signup-link{
-    padding: 4px 19px;
+    padding: 12px 19px;
     font-size: 11px;
     position: absolute;
     transform: translate(-100px, 22px);
@@ -88,7 +89,7 @@
       }
 
       .footer .signup-link{
-        padding: 4px 19px;
+        padding: 11px 19px;
         font-size: 12px;
         position: absolute;
         transform: translate(-83px, 42px);

@@ -7,9 +7,17 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import Logo from "../assets/logotype.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    navigate(`/signup?email=${email}`);
+  };
+
   return (
     <div className="footer">
       <footer className="footer-container">
@@ -37,15 +45,16 @@ const Footer = () => {
           </div>
           <div className="footer-news">
             <p>Sign up for crypto news</p>
-            <form>
+            <form onSubmit={handleSubmit}>
               <input
                 className="footer-input"
                 type="email"
                 placeholder="Enter your email"
+                name="email"
               />
-              <Link className="signup-link" to="/signup">
-            Sign Up
-          </Link>
+              <button type="submit" className="signup-link">
+                Sign Up
+              </button>
             </form>
             <div className="footer-social">
               <AiOutlineInstagram />
