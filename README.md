@@ -4,6 +4,6 @@ The CryptoWave app provides users with the ability to search and explore differe
 👉 Live Demo: https://astounding-mandazi-37466f.netlify.app 
 
 Build with:
-» HTML, CSS
-» React JS
-» API
+* HTML, CSS
+* React JS
+* API
