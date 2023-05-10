@@ -7,3 +7,7 @@ Build with:
 * HTML, CSS
 * React JS
 * API
+
+## Screenshoot of the project
+
+![alt text]()
