@@ -8,6 +8,3 @@ Build with:
 * React JS
 * API
 
-## Screenshoot of the project
-
-![alt text]()
